@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>THE GHOST WAY</title>
+   <style>
+      body {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         font-family: Arial, sans-serif;
+         transition: background-color 0.8s;
+         text-align: center;
+         background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.932) 1px, transparent 1px),
+      linear-gradient(rgba(255, 255, 255, 0) 8px, transparent 1px);
+   background-size: 10px 10px;
+        }
+        button:hover {
+            animation: flow 0.12s ease-in-out;
+        backgroundcolour:rgb(187, 255, 0)
+         padding: 12px 20px;
+         margin: 10px;
+         font-size: 18px;
+         cursor: pointer;
+         border: none;
+         border-radius: 10px;
+         box-shadow: 2px 2px 5px #999;
+      }
+   </style>
+</head>
+<body>
+   <h1>Sup bro,check what u want,be careful tho
+    I'll warn u only once,U shall see the unforgetable</h1>
+   <div>
+      <button id="HermanBtn">Luka original</button>
+      <button id="KKBtn">Extinguisher</button>
+      <button id="GamerBtn">Robby</button>
+      <button id="creativeBtn">Sasuke</button>
+      <button id="deadBtn">OTC</button>
+   </div>
+
+   <script>
+      const HermanBtn = document.getElementById('HermanBtn');
+      const KKBtn = document.getElementById('KKBtn');
+      const GamerBtn = document.getElementById('GamerBtn');
+      const creativeBtn = document.getElementById('creativeBtn');
+      const crazyBtn = document.getElementById('deadBtn')
+
+      function changeMood(mood) {
+         if (mood === 'Herman') {
+            document.body.style.backgroundColor = "rgb(25,25,45)"
+         } else if (mood === 'sleepy') {
+            document.body.style.backgroundColor = "rgb(75,35,237)";
+         } else if (mood === 'chill') {
+            document.body.style.backgroundColor ="rgb(255,45,0)";
+         } else if (mood === 'creative') {
+            document.body.style.backgroundColor = "rgb(255,255,9)";
+         } else {
+            document.body.style.backgroundColor ="rgb(75,196,105)"
+         }
+      }
+
+      HermanBtn.addEventListener('click', () => changeMood('Herman'));
+      KKBtn.addEventListener('click', () => changeMood('sleepy'));
+      GamerBtn.addEventListener('click', () => changeMood('chill'));
+      creativeBtn.addEventListener('click', () => changeMood('creative'));
+      crazyBtn.addEventListener('click',() => changeMood('deadBtn'));
+      document.querySelector('h1').textContent = "Now entering gamer mode...";
+   </script>
+</body>
+</html>
+ 
